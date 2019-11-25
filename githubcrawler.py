@@ -55,7 +55,7 @@ class GithubCrawler:
             pass
         return language_stats
 
-    def download_output(self, output):
-        with open("output.json", "w") as write_file:
+    def download_output(self, output, file_name):
+        with open("{0}.json".format(file_name), "w") as write_file:
             json.dump(output, write_file)
 
