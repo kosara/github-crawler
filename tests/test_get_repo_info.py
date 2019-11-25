@@ -20,7 +20,7 @@ with open("test_repo.html") as fp:
     test_soup_1 = BeautifulSoup(fp, 'html.parser')
 test_soup_2 = BeautifulSoup(html_doc, 'html.parser')
 
-github_crawler = GithubCrawler()
+github_crawler = GitHubCrawler()
 
 class TestGetRepoInfo:
 

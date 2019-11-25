@@ -66,10 +66,10 @@ Currently there is one test file ```test_input.JSON``` for testing purposes.
 
 Type in the command prompt:
 
-``` python main.py [x.JSON] [y]```
+``` python main.py [input] [output]```
 
-where ```x.JSON``` is the input search terms you want to return the links for,
-and ```y``` is the name of the JSON file you want the resulting links to be saved in.
+where ```input``` is the name of the JSON file (just the name)containing the input search terms you want to return the links for,
+and ```output``` is the name of the JSON file you want the resulting links to be saved in.
 
 ### Testing
 There is a pytest module in the tests folder.

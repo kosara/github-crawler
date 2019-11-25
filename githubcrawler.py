@@ -3,13 +3,13 @@ from requesthandler import *
 from bs4 import BeautifulSoup
 import re
 
-class GithubCrawler:
+class GitHubCrawler:
 
     github_url = "https://github.com"
     request_handler = RequestHandler()
 
-    def load_input(self, file):
-        with open(file, encoding='utf-8') as json_file:
+    def load_input(self, file_name):
+        with open("{0}.json".format(file_name), encoding='utf-8') as json_file:
             input = json.load(json_file)
             return input
 

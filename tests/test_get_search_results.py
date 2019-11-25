@@ -1,7 +1,7 @@
 import pytest
 from githubcrawler import *
 
-github_crawler = GithubCrawler()
+github_crawler = GitHubCrawler()
 
 class TestGetSearchResults:
   

@@ -1,7 +1,7 @@
 import pytest
 from githubcrawler import *
 
-github_crawler = GithubCrawler()
+github_crawler = GitHubCrawler()
 test_input = {
           "keywords": [
             "openstack",
@@ -17,10 +17,10 @@ test_input = {
         }
 
 
-class TestGithubCrawler:
+class TestGitHubCrawler:
 
     def test_load_input(self):
-        input = github_crawler.load_input('test_input.json')
+        input = github_crawler.load_input('input')
         assert input == test_input
 
     def test_get_search_url(self):
